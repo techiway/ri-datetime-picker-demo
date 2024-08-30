@@ -19,7 +19,7 @@
 <div>
   
   <label for="daterange">
-    Datetime range (click, then press 'Set' to modify):
+    Datetime range :
   </label>
 
   <input
@@ -27,7 +27,7 @@
     [selectMode]="'range'"
     [riDateTimeTrigger]="date_range_component"
     [riDateTime]="date_range_component"
-    style="width: 20%; "
+    style="width: 100%; "
     pickerType="both"
     id="daterange">
 
@@ -52,8 +52,6 @@
   <input [riDateTime]="dt5" [riDateTimeTrigger]="dt5" placeholder="Date Time">
   <ri-date-time [pickerType]="'both'" [pickerMode]="'dialog'" #dt5></ri-date-time>
 </div>
-
-
 
 <div>
   Timer: 

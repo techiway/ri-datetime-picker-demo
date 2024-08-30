@@ -21,11 +21,18 @@ export class AppComponent {
 
   protected endValue: Date = new Date(this.selectedDates[1]);
 
+  /**
+   * Custom Filter for the datepicker
+   */
   public myFilter = (date: Date): boolean =>  { 
     const day:number = date.getDay();
     return day !== 0 && day !== 6;
   }
 
+  /**
+   * Method for handling the selected date
+   * @param date 
+   */
   protected selectedTrigger(date: Date): void {
     console.log(date);
   }
